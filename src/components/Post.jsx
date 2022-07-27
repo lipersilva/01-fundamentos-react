@@ -11,8 +11,8 @@ export function Post(){
             alt="" 
           />
           <div className={styles.authorInfo}>
-            <strong>Filipe Rodrigues</strong>
-            <span>Web Developer</span>
+            <strong>Jane Cooper</strong>
+            <span>Dev Front-End</span>
           </div>
         </div>
 
@@ -34,8 +34,15 @@ export function Post(){
           <a href=''> #nlw </a> {' '}
           <a href=''> #rocketseat </a>
         </p>
-        
       </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixe seu feedback</strong>
+        <textarea placeholder="Deixe seu comentário"/>
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </article>
   );
 }
