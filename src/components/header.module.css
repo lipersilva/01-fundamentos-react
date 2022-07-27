@@ -1,4 +1,13 @@
 .header{
-  background: green;
+  background: var(--gray-800);
   height: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0; /* 1.25rem = 20px */
+  align-items: center;
+  gap: 1rem;
+}
+
+.header img {
+  height: 2rem;
 }
