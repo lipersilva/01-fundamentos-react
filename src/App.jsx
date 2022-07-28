@@ -15,7 +15,7 @@ const posts = [
     content: [
       { type: 'pharagraph', content:'Fala galeraa 👋'},
       { type: 'pharagraph', content:'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
-      { type: 'link', content: 'jane.design/doctorcare' } 
+      { type: 'link', content: 'jane.design/doctorcare'}, 
         // <a href=''> #novoprojeto</a>{' '}
         // <a href=''> #nlw </a> {' '}
         // <a href=''> #rocketseat </a>
@@ -32,7 +32,7 @@ const posts = [
     content: [
       { type: 'pharagraph', content:'Fala galeraa 👋'},
       { type: 'pharagraph', content:'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'},
-      { type: 'link', content: 'jane.design/doctorcare' } 
+      { type: 'link', content: 'jane.design/doctorcare'}, 
         // <a href=''> #novoprojeto</a>{' '}
         // <a href=''> #nlw </a> {' '}
         // <a href=''> #rocketseat </a>
@@ -51,6 +51,7 @@ function App() {
           {posts.map(post => {
             return (
               <Post
+                key={post.id}
                 author= {post.author}
                 content= {post.content}
                 publishedAt= {post.publishedAt}
