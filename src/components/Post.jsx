@@ -26,7 +26,7 @@ export function Post({ author, publishedAt, content }){
 
   function handleCreateNewComment(){
     event.preventDefault();
-    setComments([...comments,newCommentText]);
+    setComments([...comments,newCommentText]); // copia o array comments e adiciona o novo comentário
     setNewCommentText('');
   };
 
